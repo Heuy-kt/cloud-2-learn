@@ -1,0 +1,11 @@
+spring:
+  config:
+    import: "optional:configserver:http://localhost:8889/"
+  application:
+    name: eureka-server
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

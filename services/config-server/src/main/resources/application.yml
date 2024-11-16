@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Heuy-kt/cloud-2-learn.git # Your Git repo URL
+#          clone-on-start: false # Optional: Clone the repo at server startup
+#          default-label: main # Specify the branch (default is 'main')
+
+server:
+  port: 8889
